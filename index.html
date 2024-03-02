@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</head>
+<body>
+
+    <div class="main">
+       
+        <div class="container-3">
+            <label for="blur">Blur</label>
+            <input type="range" name="blur" id="blur"  min="0" max="20" step="1" data-sizing="px">
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color" >
+        </div>
+        <div class="container-2">
+            <div class="container-1">
+                <div>
+                    <h2>Update CSS Variable With </h2>
+                </div>
+              
+                
+          
+               <div>
+                <h2 id="js"> JS</h2> 
+               </div>
+              
+                
+            </div>
+
+        
+            
+        </div>
+     
+
+         
+
+        
+       
+    </div>
+</body>
+
+
+    
+
+<script>
+   let inp=document.querySelectorAll('input')
+   
+
+   function change(){
+    const suffix=this.dataset.sizing || '';
+   
+    console.log(this.name+this.value);
+
+    console.log(typeof this.name);
+
+   
+
+    document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix)
+
+ 
+
+
+
+   }
+
+   inp.forEach((e)=>{
+        e.addEventListener('change',change)
+        e.addEventListener('mousemove',change)
+   })
+
+  
+    
+
+    
+
+
+</script>
+</html>

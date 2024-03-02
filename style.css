@@ -1,0 +1,107 @@
+
+    :root{
+        --color:#ffc600;
+
+        --blur:10px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.main{
+
+    height: 100vh;
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+
+   
+}
+
+.container-1{
+    height: fit-content;
+    width: 30vw;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    
+
+    flex-wrap: wrap;
+  
+    
+   
+    color: black;
+    border-color:transparent;
+    color: white;
+    
+}
+
+#js{
+    
+    color:var(--color);
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+   
+    height: 100%;
+    width: 30vw;
+     border-radius: 2%;
+    background-image: url(casey-horner-IrvTUUn-pp0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(var(--blur));
+  
+
+}
+
+input{
+    color: green;
+}
+.container-3{
+    margin: 2px;
+    padding: 5px;
+    height: fit-content;
+    width: 30vw;
+    background-color: rgb(2, 2, 2);
+    border: 2px rgb(225, 236, 12) solid;
+    border-radius: 20px;
+    color: rgb(240, 236, 7);
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#blur{
+    color: wheat;
+
+}
+#color{
+    height: 30px;
+    width: 50px;
+    border: 0px solid wheat;
+}
+
+
+
+
+
+
